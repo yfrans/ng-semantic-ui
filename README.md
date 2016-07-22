@@ -4,6 +4,7 @@ Easy to use:
 
 `<script type="text/javascript" src="./mylibs/ng-semantic-ui.js"></script>`  
 ######OR
+`npm install ng-semantic-ui` and then:
 `angular.module('myApp', [require('ng-semantic-ui')])`  
 ##Available directives
 ####Dropdown
