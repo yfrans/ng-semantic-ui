@@ -1,24 +1,24 @@
 angular.module('ng-semantic-ui', [])
-    .directive('uiDropdown', function ($timeout) {
-        return {
-            restrict: 'A',
-            scope: {
-                placeholder: '@',
+	.directive('uiDropdown', function ($timeout) {
+		return {
+			restrict: 'A',
+			scope: {
+				placeholder: '@',
 				class: '@',
 				items: '=',
-                model: '=',
+				model: '=',
 				change: '=',
 				allowAdditions: '='
-            },
-            template:
+			},
+			template:
 				'<input type="hidden">' + 
 				'<i class="dropdown icon"></i>' +
-                '<div class="default text">{{placeholder}}</div>' +
+				'<div class="default text">{{placeholder}}</div>' +
 				'<div class="menu">' +
 				'<div class="item" ng-repeat="item in items" data-value="{{item.value ? item.value : item}}">{{item.text ? item.text : item}}</div>' +
 				'</div>',
-            link: function (scope, element, attrs) {
-                scope.placeholder = scope.placeholder || 'Select...';
+			link: function (scope, element, attrs) {
+				scope.placeholder = scope.placeholder || 'Select...';
 				var ddClass = ['ui', 'selection', 'dropdown'];
 				if (scope.allowAdditions) {
 					ddClass.push('search');
@@ -46,8 +46,8 @@ angular.module('ng-semantic-ui', [])
 				scope.$watch(function () { return scope.model; }, function () {
 					$(element).dropdown('set selected', scope.model);
 				});
-            }
-        };
-    });
+			}
+		};
+	});
 
 module.exports = 'ng-semantic-ui';
