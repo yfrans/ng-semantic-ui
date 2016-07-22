@@ -1,5 +1,4 @@
 #ng-semantic-ui
---
 Directive(s) for Semantic-UI library.  
 Easy to use:
 
