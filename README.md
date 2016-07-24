@@ -3,9 +3,10 @@ Directive(s) for Semantic-UI library.
 Easy to use:
 
 `<script type="text/javascript" src="./mylibs/ng-semantic-ui.js"></script>`  
+then: `angular.module('myApp', ['ng-semantic-ui'])`
 ######OR
-`npm install ng-semantic-ui` and then:
-`angular.module('myApp', [require('ng-semantic-ui')])`  
+`npm install ng-semantic-ui`  
+then: `angular.module('myApp', [require('ng-semantic-ui')])`  
 ##Available directives
 ####Dropdown
 `<ui-dropdown></ui-dropdown>`
@@ -16,3 +17,6 @@ Easy to use:
 - `placeholder` the element placeholder, default: "Select..."
 - `allow-additions` "true" or "false". Automatically add `search` class.
 - `change` the function to call when onChange is fired. Accept value and text: `function (value, text) {}`.
+
+
+More to come...
