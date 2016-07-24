@@ -9,7 +9,7 @@ then: `angular.module('myApp', ['ng-semantic-ui'])`
 then: `angular.module('myApp', [require('ng-semantic-ui')])`  
 ##Available directives
 ####Dropdown
-`<ui-dropdown></ui-dropdown>`
+`<div ui-dropdown></div>`
 #####Attributes:
 - `model` the model of this element (ng-model)
 - `items` array of items, simple string or object with display text and value: `{ text: 'My text', value: '1' }`
