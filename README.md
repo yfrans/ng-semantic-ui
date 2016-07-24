@@ -2,7 +2,7 @@
 Directive(s) for Semantic-UI library.  
 Easy to use:
 
-`<script type="text/javascript" src="./mylibs/ng-semantic-ui.js"></script>`  
+`<script type="text/javascript" src="./mylibs/ng-semantic-ui/dist/ng-semantic-ui.min.js"></script>`  
 then: `angular.module('myApp', ['ng-semantic-ui'])`
 ######OR
 `npm install ng-semantic-ui`  
