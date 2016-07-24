@@ -1,0 +1,70 @@
+<html ng-app="demoApp">
+    <head>
+        <title>ng-semantic-ui demo page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+        <script type="text/javascript" src="/lib/ng-semantic-ui.js"></script>
+        <script src="script.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="ui centered grid">
+            <div class="row">
+                <div class="eight wide column">
+                    <div class="ui top attached message">
+                        <div class="header">Dropdown</div>
+                    </div>
+                    <div class="ui bottom attached segment" ng-controller="DropdownController">
+                        <div ui-dropdown
+                            class="fluid"
+                            items="items"
+                            model="selected"
+                            placeholder="Dropdown example"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="eight wide column">
+                    <div class="ui top attached message">
+                        <div class="header">Input</div>
+                    </div>
+                    <div class="ui bottom attached segment" ng-controller="InputController">
+                        <div ui-input
+                            model="text1"
+                            class="fluid"
+                            placeholder="Regular input"
+                        ></div>
+                        <div ui-input
+                            model="text2"
+                            class="fluid"
+                            placeholder="With icon (left)"
+                            icon="setting"
+                            icon-position="left"
+                        ></div>
+                        <div ui-input
+                            model="text3"
+                            class="fluid"
+                            placeholder="With icon (right)"
+                            icon="setting"
+                        ></div>
+                        <div ui-input
+                            model="text4"
+                            class="fluid"
+                            placeholder="Labeled input (left)"
+                            label="My label"
+                        ></div>
+                        <div ui-input
+                            model="text5"
+                            class="fluid"
+                            placeholder="Labeled input (right)"
+                            label="My label"
+                            label-position="right"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>

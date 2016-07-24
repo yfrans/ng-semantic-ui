@@ -18,5 +18,15 @@ then: `angular.module('myApp', [require('ng-semantic-ui')])`
 - `allow-additions` "true" or "false". Automatically add `search` class.
 - `change` the function to call when onChange is fired. Accept value and text: `function (value, text) {}`.
 
+####Input
+`<div ui-input></div>`
+#####Attributes:
+- `model` the model of this element (ng-model)
+- `class` the element class. (`ui input` is already there)
+- `placeholder` the element placeholder, default: "Select..."
+- `label` the label to add to the input
+- `label-position` the label position (left or right, default left)
+- `icon` the icon to add to the input
+- `icon-position` the icon position (left or right, default right)
 
 More to come...
