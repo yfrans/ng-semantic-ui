@@ -5,7 +5,7 @@ angular.module('ng-semantic-ui', [])
 
 module.exports = 'ng-semantic-ui';
 },{"./modules/dropdown.js":2,"./modules/input.js":3}],2:[function(require,module,exports){
-module.exports = /*@ngInject*/function ($timeout) {
+module.exports = /*@ngInject*/["$timeout", function ($timeout) {
     return {
         restrict: 'A',
         scope: {
@@ -54,9 +54,9 @@ module.exports = /*@ngInject*/function ($timeout) {
             });
         }
     };
-};
+}];
 },{}],3:[function(require,module,exports){
-module.exports = /*@ngInject*/function ($timeout) {
+module.exports = /*@ngInject*/["$timeout", function ($timeout) {
     return {
         restrict: 'A',
         scope: {
@@ -73,7 +73,7 @@ module.exports = /*@ngInject*/function ($timeout) {
             '<input type="{{type}}" placeholder="{{placeholder}}" ng-model="model">' +
             '<i ng-show="icon"></i>',
         link: function (scope, element, attrs) {
-            scope.placeholder = scope.placeholder || 'Select...';
+            scope.placeholder = scope.placeholder;
             
             var inputClass = ['ui', 'input'];
             var iconClass = (scope.icon || '').split(' ');
@@ -101,5 +101,5 @@ module.exports = /*@ngInject*/function ($timeout) {
             });
         }
     };
-};
+}];
 },{}]},{},[1]);

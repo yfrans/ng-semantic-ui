@@ -15,7 +15,7 @@ module.exports = /*@ngInject*/function ($timeout) {
             '<input type="{{type}}" placeholder="{{placeholder}}" ng-model="model">' +
             '<i ng-show="icon"></i>',
         link: function (scope, element, attrs) {
-            scope.placeholder = scope.placeholder || 'Select...';
+            scope.placeholder = scope.placeholder;
             
             var inputClass = ['ui', 'input'];
             var iconClass = (scope.icon || '').split(' ');
